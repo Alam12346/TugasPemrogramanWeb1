@@ -1,3 +1,15 @@
+.nav-link {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffc107; /* Warna kuning saat hover */
+  transform: scale(1.1); /* Sedikit memperbesar */
+  background-color: black;
+
+}
+   
+   
    .header{
         text-decoration: none;
     }
@@ -7,9 +19,9 @@
           border-radius: 10px;
         }
         
-        .badge{
+        /* .badge{
             width: 50px;
-        }
+        } */
         .badge-custom {
           background-color: #2c6b2e;
           color: white;

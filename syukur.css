@@ -1,9 +1,12 @@
+.bakgrond{
+    background-image: radial-gradient(black, gray)
+}
 .pic{
     width: 300px;
 }
 .maincard{
     text-align: center;
 }
-.undercard{
-    
+.forCard{
+    background-image: linear-gradient(white, gray);
 }

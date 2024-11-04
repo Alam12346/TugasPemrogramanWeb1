@@ -49,7 +49,7 @@
             <div class="main-box bg-white shadow-sm p-4">
               <div class="article1 d-flex justify-content-between bg-success rounded-pill mb-3">
                 <h5 id="article-title" class="text-white mx-4">Title Article</h5>
-                <span class="badge badge-custom">258</span>
+                <span class="badge badge-custom" id="article-badge"></span>
               </div>
         
               <div class="text-center">
@@ -57,7 +57,7 @@
               </div>
         
               <div class="content-text mt-3" id="article-content">
-            
+             <!-- isi content dari article  -->
               </div>
         
               <div class="info-text mt-4">
@@ -134,12 +134,13 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
             <script>
-                // Mengambil data dari artikel Home di localStorage
+                // Mengambil data dari artikel Home dalam localStorage
                 const article = JSON.parse(localStorage.getItem("selectedArticle"));
                 if (article) {
                   document.getElementById("article-title").innerText = article.title;
                   document.getElementById("article-content").innerText = article.content;
                   document.getElementById("article-author").innerText = article.author;
+                  document.getElementById("article-badge").innerText = article.badge;
                   document.getElementById("article-tags").innerText = article.tags.join(", ");
                 }
               </script>

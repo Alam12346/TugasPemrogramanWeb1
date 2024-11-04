@@ -1,4 +1,4 @@
-// home article dinamis
+// Home article dinamis
 function showDetail(articleID) {
     const articles = {
         article1: {

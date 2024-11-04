@@ -134,10 +134,9 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
             <script>
-                // Ambil artikel dari localStorage
+                // Mengambil data dari artikel Home di localStorage
                 const article = JSON.parse(localStorage.getItem("selectedArticle"));
                 if (article) {
-                  // Update detail artikel sesuai dengan data yang diambil
                   document.getElementById("article-title").innerText = article.title;
                   document.getElementById("article-content").innerText = article.content;
                   document.getElementById("article-author").innerText = article.author;
